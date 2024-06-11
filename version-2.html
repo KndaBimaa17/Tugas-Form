@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .form-group-1 {
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+      }
+      .form-group-2 {
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      .iwp {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section id="hero">
+        <h1>Form Pendaftaran Mahasiswa Baru</h1>
+        <h2>Data Diri</h2>
+        <div class="data-diri-wrap">
+          <div class="form-group-1">
+            <div class="iwp">
+              <label for="nama_lengkap">Nama Lengkap:</label>
+              <input
+                type="text"
+                id="nama_lengkap"
+                name="nama_lengkap"
+                placeholder="Masukan Nama Lengkap"
+              />
+            </div>
+
+            <div class="iwp">
+              <label for="nik">Nomor Identitas (NIK):</label>
+              <input
+                type="text"
+                id="nik"
+                name="nik"
+                placeholder="Masukan Nomor NIK"
+              />
+            </div>
+          </div>
+
+          <div class="form-group-2">
+            <div class="iwp">
+                <label for="tempat_lahir">Tempat Lahir:</label>
+                <input
+                  type="text"
+                  id="tempat_lahir"
+                  name="tempat_lahir"
+                  placeholder="Masukan Tempat Lahir"
+                />
+              </div>
+              <div class="iwp">
+                <label for="tanggal_lahir">Tanggal Lahir:</label>
+                <input
+                  type="text"
+                  id="tanggal_lahir"
+                  name="tanggal_lahir"
+                  placeholder="dd/mm/yyyy"
+                />
+              </div>
+              <div class="iwp">
+                <label for="jenis_kelamin">Jenis Kelamin:</label>
+                <select id="jenis_kelamin" name="jenis_kelamin">
+                  <option value="">Pilih</option>
+                </select>
+              </div>
+          </div>
+        </div>
+        <div class="alamat-asal-wrap"></div>
+        <div class="data-pendidikan-wrap"></div>
+        <div class="program-studi-wrap"></div>
+      </section>
+    </main>
+  </body>
+</html>

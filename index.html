@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Pendaftaran Mahasiswa Baru</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+      }
+      .container {
+        width: 80%;
+        margin: 20px auto;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .hdr {
+        text-align: center;
+      }
+      .form-header {
+        background-color: #c1dbff;
+        color: rgb(34, 71, 185);
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        text-align: left;
+      }
+      .form-header h2 {
+        margin: 0;
+      }
+      .form-group {
+        margin-left: 10px;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .form-group label {
+        flex: 1;
+        margin-right: 10px;
+        font-weight: bold;
+      }
+      .form-group input,
+      .form-group select {
+        flex: 2;
+        padding: 8px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .form-buttons {
+        text-align: center;
+      }
+      .form-buttons button {
+        padding: 10px 20px;
+        margin: 5px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .form-buttons button[type="submit"] {
+        background-color: #007bff;
+        color: white;
+      }
+      .form-buttons button[type="reset"] {
+        background-color: #6c757d;
+        color: white;
+      }
+      .form-group select,
+      .form-group input[type="text"],
+      .form-group input[type="email"],
+      .form-group input[type="tel"] {
+        width: calc(100% - 10px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <h2 class="hdr">Form Pendaftaran Mahasiswa Baru</h2>
+      <form>
+        <div class="form-header">
+          <h2>Data Diri</h2>
+        </div>
+        <div class="form-group">
+          <label for="nama_lengkap">Nama Lengkap:</label>
+          <input
+            type="text"
+            id="nama_lengkap"
+            name="nama_lengkap"
+            placeholder="Masukan Nama Lengkap"
+          />
+        </div>
+        <div class="form-group">
+          <label for="nik">Nomor Identitas (NIK):</label>
+          <input
+            type="text"
+            id="nik"
+            name="nik"
+            placeholder="Masukan Nomor NIK"
+          />
+        </div>
+        <div class="form-group">
+          <label for="tempat_lahir">Tempat Lahir:</label>
+          <input
+            type="text"
+            id="tempat_lahir"
+            name="tempat_lahir"
+            placeholder="Masukan Tempat Lahir"
+          />
+        </div>
+        <div class="form-group">
+          <label for="tanggal_lahir">Tanggal Lahir:</label>
+          <input
+            type="text"
+            id="tanggal_lahir"
+            name="tanggal_lahir"
+            placeholder="dd/mm/yyyy"
+          />
+        </div>
+        <div class="form-group">
+          <label for="jenis_kelamin">Jenis Kelamin:</label>
+          <select id="jenis_kelamin" name="jenis_kelamin">
+            <option value="">Pilih</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="kewarganegaraan">Kewarganegaraan:</label>
+          <select id="kewarganegaraan" name="kewarganegaraan">
+            <option value="">Pilih</option>
+            <option value="">WNA</option>
+            <option value="">WNI</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="agama">Agama:</label>
+          <select id="agama" name="agama">
+            <option value="">Pilih</option>
+            <option value="">Islam</option>
+            <option value="">Buddha</option>
+            <option value="">Hindu</option>
+            <option value="">Kristen</option>
+            <option value="">Kong Hu Cu</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="nama_ibu">Nama Ibu Kandung:</label>
+          <input
+            type="text"
+            id="nama_ibu"
+            name="nama_ibu"
+            placeholder="Masukan Nama Ibu Kandung"
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Masukan Email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="no_telp">No Telp:</label>
+          <input
+            type="tel"
+            id="no_telp"
+            name="no_telp"
+            placeholder="Masukan No Telp"
+          />
+        </div>
+
+        <div class="form-header">
+          <h2>Data Alamat Asal</h2>
+        </div>
+        <div class="form-group">
+          <label for="alamat">Alamat:</label>
+          <input type="text" id="alamat" name="alamat" />
+        </div>
+        <div class="form-group">
+          <label for="kode_pos">Kode Pos:</label>
+          <input
+            type="text"
+            id="kode_pos"
+            name="kode_pos"
+            placeholder="Kode Pos"
+          />
+        </div>
+        <div class="form-group">
+          <label for="provinsi">Provinsi:</label>
+          <select id="provinsi" name="provinsi">
+            <option value="Aceh">Aceh</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="kabupaten">Kabupaten:</label>
+          <select id="kabupaten" name="kabupaten">
+            <option value="">Pilih</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="kecamatan">Kecamatan:</label>
+          <select id="kecamatan" name="kecamatan">
+            <option value="">Pilih</option>
+          </select>
+        </div>
+
+        <div class="form-header">
+          <h2>Data Pendidikan</h2>
+        </div>
+        <div class="form-group">
+          <label for="pendidikan_terakhir">Pendidikan Terakhir:</label>
+          <select id="pendidikan_terakhir" name="pendidikan_terakhir">
+            <option value="SMA - IPA">SMA - IPA</option>
+            <option value="SMA - IPA">SMA - IPS</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="nama_sekolah">Nama Sekolah:</label>
+          <input
+            type="text"
+            id="nama_sekolah"
+            name="nama_sekolah"
+            placeholder="Masukan Nama Sekolah"
+          />
+        </div>
+        <div class="form-group">
+          <label for="nilai_rapor">Rata-rata Nilai Rapor Kelas 12:</label>
+          <input
+            type="text"
+            id="nilai_rapor"
+            name="nilai_rapor"
+            placeholder="Masukan Rata-rata nilai rapor"
+          />
+        </div>
+
+        <div class="form-header">
+          <h2>Pilihan Program Studi</h2>
+        </div>
+        <div class="form-group">
+          <label for="prodi1">Pilih Program Studi 1:</label>
+          <select id="prodi1" name="prodi1">
+            <option value="D3 - Teknik Komputer">D3 - Teknik Komputer</option>
+            <option value="D4 - Teknik Komputer">D4 - Teknik Komputer</option>
+            <option value="S1 - Teknik Komputer">S1 - Teknik Komputer</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="prodi2">Pilih Program Studi 2:</label>
+          <select id="prodi2" name="prodi2">
+            <option value="D3 - Teknik Komputer">D3 - Teknik Komputer</option>
+            <option value="D4 - Teknik Komputer">D4 - Teknik Komputer</option>
+            <option value="S1 - Teknik Komputer">S1 - Teknik Komputer</option>
+          </select>
+        </div>
+
+        <div class="form-buttons">
+          <button type="submit">Daftar</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
